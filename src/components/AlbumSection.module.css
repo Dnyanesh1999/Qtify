@@ -27,5 +27,16 @@
 .albumGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 40px;
+  gap: 20px;
+}
+
+.carousel {
+  padding: 20px;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: var(--primary-green);
+  margin: 20px 0;
 }

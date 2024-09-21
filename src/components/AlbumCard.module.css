@@ -1,40 +1,38 @@
 .card {
   display: flex;
   flex-direction: column;
-  height: 225px;
-  width: 159px;
+  background-color: var(--primary-black);
   border-radius: 10px;
   overflow: hidden;
-  background-color: var(--primary-white);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 160px; /* Fixed width */
+
+  height: 235px;
 }
 
 .albumImage {
   width: 100%;
-  height: 80%;
-  object-fit: cover;
-  border-bottom: 1px solid #ddd;
+  height: 80%; /* Ensure the image maintains aspect ratio */
+  border-bottom: 2px solid var(--primary-black); /* Separation between image and content */
 }
 
 .cardContent {
   padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10px;
+  text-align: center;
+  background-color: var(--primary-white);
 }
 
-.followChip {
-  background-color: var(--primary-black);
-  color: pink;
+.chip {
+  background-color: transparent; /* Ensure the background aligns with Figma */
+  color: var(--primary-green);
+  border: 1px solid var(--primary-green); /* Outline to match the design */
   font-size: 12px;
-  margin-bottom: 8px;
+  border-radius: 20px;
+  padding: 5px 10px;
 }
 
 .albumName {
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
   color: var(--primary-white);
-  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
 }

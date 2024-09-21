@@ -1,0 +1,30 @@
+.songsSection {
+  padding: 20px;
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.genreTabs {
+  margin-top: 10px;
+}
+
+.genreTabs .MuiTab-root {
+  color: var(--primary-white);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-transform: none;
+}
+
+.Mui-selected {
+  color: var(--primary-green); /* Active tab color */
+}
+
+.MuiTabs-indicator {
+  background-color: var(--primary-green); /* Indicator for the active tab */
+}

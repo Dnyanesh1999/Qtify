@@ -1,0 +1,48 @@
+.carousel {
+  width: 100%;
+  position: relative;
+}
+
+.swiper {
+  padding: 20px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiperButtonPrev,
+.swiperButtonNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary-green);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Make buttons circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiperButtonPrev {
+  left: 0;
+}
+
+.swiperButtonNext {
+  right: 0;
+}
+
+.swiperButtonPrev:hover,
+.swiperButtonNext:hover {
+  background-color: var(
+    --primary-green-hover
+  ); /* You can define a hover color */
+}
